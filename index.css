@@ -14,15 +14,6 @@ body {
   overflow: hidden;
 }
 
-@media (max-width: 400px) {
-  .modal {
-    width: 100%;
-    height: 100vh;
-    border-radius: 0;
-    box-shadow: 0;
-  }
-}
-
 .cont {
   width: 100%;
   height: 100%;
@@ -41,6 +32,9 @@ body {
   height: 100%;
   position: relative;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .button {
@@ -97,11 +91,10 @@ body {
 }
 
 .github-link {
+  width: 150px;
   font: 14px Arial, sans-serif;
   color: #7c7c7c;
-  position: absolute;
-  bottom: 60px;
-  left: 40%;
+  margin: 0 auto 30px;
 }
 
 .github-logo {
@@ -111,4 +104,17 @@ body {
   position: relative;
   top: 5px;
   margin-left: 10px;
+}
+
+@media (max-width: 400px) {
+  .modal {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    box-shadow: 0;
+  }
+
+  .github-link {
+    margin-bottom: 120px;
+  }
 }
