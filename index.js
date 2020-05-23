@@ -17,7 +17,6 @@ button.addEventListener('click', e => {
       cont.classList.remove('light'); 
     }, 350);
   } else {
-    console.log('test');
     bgLight.classList.add('is-active');
     bgLight.classList.add('index');
     bgDark.classList.remove('index');
