@@ -15,7 +15,7 @@ button.addEventListener('click', e => {
     setTimeout(function(){ 
       cont.classList.add('dark'); 
       cont.classList.remove('light'); 
-    }, 350);
+    }, 550);
   } else {
     bgLight.classList.add('is-active');
     bgLight.classList.add('index');
@@ -25,6 +25,6 @@ button.addEventListener('click', e => {
     setTimeout(function(){ 
       cont.classList.remove('dark'); 
       cont.classList.add('light'); 
-    }, 350);
+    }, 550);
   }  
 });
